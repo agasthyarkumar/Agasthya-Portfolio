@@ -1,0 +1,210 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #162783;
+    transition: color 0.3s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+body:hover{
+    color:#1e1e1e;
+    background-color: antiquewhite;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background:indianred;
+    color: black;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.4s ease-in-out;
+}
+header:hover{
+    background-color:teal;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #e8dc62;
+    transform: scale(1.05);
+    
+}
+
+.section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card a{
+    text-decoration: none;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color:aliceblue;
+}
+
+/* Certificates Section */
+.certificate-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.certificate-card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: calc(33% - 2rem);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificate-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.certificate-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.certificate-details p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 768px) {
+    .certificate-card {
+        width: 100%;
+    }
+}
+
+
+.skills-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skills-list li {
+    list-style: none;
+    background: #1e1e1e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #e64a19;
+}
+
+footer {
+    background:indianred;
+    color: black;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s ease-in-out;
+}
+footer:hover{
+    background-color:teal;
+}
+
+footer .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    
+}
+
+footer nav ul li a:hover {
+    color: #e8dc62;
+    transform: scale(1.05);
+    
+}
